@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katıl | OKÜ Kulüp Sitesi</title>
+  <link rel="stylesheet" href="./public/bootstrap_5_3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/style.css">
+  <link rel="stylesheet" href="./public/lucide_1_61_0/lucide-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ KULÜP SİTESİ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>ANASAYFA</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i data-lucide="users" class="me-1" aria-hidden="true"></i>KULÜPLER</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="kulupler.html"><i data-lucide="library" class="me-1" aria-hidden="true"></i>Tüm Kulüpler</a></li>
+              <li><a class="dropdown-item" href="etkinlikler.html"><i data-lucide="calendar-days" class="me-1" aria-hidden="true"></i>Etkinlik Takvimi</a></li>
+              <li><a class="dropdown-item" href="sss.html"><i data-lucide="circle-help" class="me-1" aria-hidden="true"></i>Sıkça Sorulan Sorular</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="universitimiz.html"><i data-lucide="building-2" class="me-1" aria-hidden="true"></i>ÜNİVERSİTEMİZ</a></li>
+          <li class="nav-item"><a class="nav-link" href="hakkimizda.html"><i data-lucide="info" class="me-1" aria-hidden="true"></i>HAKKINDA</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+          <li class="nav-item"><a class="nav-link active" href="katil.html"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>KATIL</a></li>
+        </ul>
+        <form class="d-flex" role="search" action="kulupler.html" method="get">
+          <input class="form-control me-2" type="search" name="q" placeholder="Konu arayınız" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i data-lucide="search" class="me-1" aria-hidden="true"></i>ARA</button>
+        </form>
+        <button class="btn btn-outline-dark ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#duyurularOffcanvas" aria-controls="duyurularOffcanvas"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pt-5 mt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>Anasayfa</a></li>
+        <li class="breadcrumb-item"><a href="kulupler.html">Kulüpler</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Katıl</li>
+      </ol>
+    </nav>
+  </div>
+
+  <main class="container my-5">
+    <h1 class="mb-3"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</h1>
+    <p class="lead text-body-secondary">Başvuru formunu doldurarak istediğin kulübe üyelik başvurusu yapabilirsin.</p>
+
+    <div class="mb-4">
+      <div class="progress" role="progressbar" aria-label="Başvuru adımı" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-dark" style="width: 33%">1/3 Başvuru</div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <form id="joinForm" class="border p-4">
+          <h2 class="h4 mb-3"><i data-lucide="file-text" class="me-1" aria-hidden="true"></i>Başvuru Formu</h2>
+          <div class="mb-3">
+            <label for="clubSelect" class="form-label">Kulüp Seç</label>
+            <select class="form-select" id="clubSelect" required>
+              <option selected disabled value="">Kulüp seçiniz</option>
+              <option>OKÜ Basketbol Kulübü</option>
+              <option>OKÜ Sanat Kulübü</option>
+              <option>OKÜ Müzik Kulübü</option>
+              <option>OKÜ Yazılım Kulübü</option>
+              <option>OKÜ Fotoğrafçılık Kulübü</option>
+              <option>OKÜ Tiyatro Kulübü</option>
+              <option>OKÜ Satranç Kulübü</option>
+              <option>OKÜ Astronomi Kulübü</option>
+              <option>OKÜ Dans Kulübü</option>
+              <option>OKÜ Robotik Kulübü</option>
+              <option>OKÜ Gönüllülük Kulübü</option>
+              <option>OKÜ Edebiyat Kulübü</option>
+              <option>OKÜ Girişimcilik Kulübü</option>
+              <option>OKÜ Gastronomi Kulübü</option>
+              <option>OKÜ Doğa ve Çevre Kulübü</option>
+            </select>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="joinName" placeholder="Ad Soyad" required>
+                <label for="joinName">Ad Soyad</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="joinNumber" placeholder="Öğrenci Numarası" required>
+                <label for="joinNumber">Öğrenci Numarası</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="joinEmail" placeholder="E-posta" required>
+                <label for="joinEmail">E-posta</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="joinPhone" placeholder="Telefon">
+                <label for="joinPhone">Telefon</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" id="joinTerms" required>
+            <label class="form-check-label" for="joinTerms">Kulüp kurallarını okudum ve kabul ediyorum.</label>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <button type="submit" class="btn btn-outline-dark"><i data-lucide="send" class="me-1" aria-hidden="true"></i>Başvuruyu Gönder</button>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#termsModal"><i data-lucide="file-text" class="me-1" aria-hidden="true"></i>Koşulları Oku</button>
+          </div>
+          <div id="joinSuccess" class="alert alert-light border mt-3 mb-0 d-none" role="alert">Başvurun alındı. Kulüp yönetimi en kısa sürede seninle iletişime geçecek.</div>
+        </form>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4 mb-3"><i data-lucide="list-checks" class="me-1" aria-hidden="true"></i>Üyelik Süreci</h2>
+        <div class="accordion" id="joinAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#joinOne" aria-expanded="true" aria-controls="joinOne">Kimler başvurabilir?</button>
+            </h3>
+            <div id="joinOne" class="accordion-collapse collapse show" data-bs-parent="#joinAccordion">
+              <div class="accordion-body">Üniversitemizde aktif olarak kayıtlı tüm öğrenciler kulüplere başvurabilir.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#joinTwo" aria-expanded="false" aria-controls="joinTwo">Başvuru süreci nasıl işliyor?</button>
+            </h3>
+            <div id="joinTwo" class="accordion-collapse collapse" data-bs-parent="#joinAccordion">
+              <div class="accordion-body">Form gönderilir, kulüp yönetimi değerlendirir ve uygun bulunan başvurular için oryantasyon planlanır.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#joinThree" aria-expanded="false" aria-controls="joinThree">Üyelik ücretli mi?</button>
+            </h3>
+            <div id="joinThree" class="accordion-collapse collapse" data-bs-parent="#joinAccordion">
+              <div class="accordion-body">Hayır, öğrenci kulüplerine üyelik ücretsizdir.</div>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-light border mt-4 mb-0" role="alert">Sorun yaşıyorsan <a href="iletisim.html" class="alert-link">iletişim sayfasından</a> bize ulaşabilirsin.</div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="termsModalLabel"><i data-lucide="file-check-2" class="me-1" aria-hidden="true"></i>Kulüp Üyelik Koşulları</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">Kulüp toplantılarına düzenli katılım beklenir.</li>
+            <li class="list-group-item px-0">Etkinliklerde üniversite kurallarına uyulmalıdır.</li>
+            <li class="list-group-item px-0">Kulüp demirbaşları özenle kullanılmalıdır.</li>
+            <li class="list-group-item px-0">Ayrılmak isteyen üyeler kulüp yönetimine bilgi vermelidir.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal"><i data-lucide="check" class="me-1" aria-hidden="true"></i>Anladım</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="duyurularOffcanvas" aria-labelledby="duyurularOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5" id="duyurularOffcanvasLabel"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item"><div class="fw-semibold">Yeni dönem başvuruları</div><small class="text-body-secondary">Son tarih: 30 Mayıs</small></li>
+        <li class="list-group-item"><div class="fw-semibold">Oryantasyon toplantısı</div><small class="text-body-secondary">3 Haziran, 15.00</small></li>
+      </ul>
+      <a href="kulupler.html" class="btn btn-outline-dark w-100">Kulüpleri İncele<i data-lucide="arrow-right" class="ms-1" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <footer class="border-top mt-5 py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-4"><div class="fw-semibold"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ Kulüp Sitesi</div><small class="text-dark">&copy; 2026 Tüm hakları saklıdır.</small></div>
+        <div class="col-lg-5">
+          <address class="mb-0 small text-dark">
+            <div><i data-lucide="map-pin" aria-hidden="true"></i><span class="text-dark">Adres:</span> OKÜ Kampüsü, Öğrenci Yaşam Merkezi</div>
+            <div><i data-lucide="phone" aria-hidden="true"></i><span class="text-dark">Telefon:</span> <a href="tel:+903220000000" class="text-reset text-decoration-none text-dark">0322 000 00 00</a></div>
+            <div><i data-lucide="mail" aria-hidden="true"></i><span class="text-dark">E-posta:</span> <a href="mailto:kulup@oku.edu.tr" class="text-reset text-decoration-none text-dark">kulup@oku.edu.tr</a></div>
+          </address>
+        </div>
+        <div class="col-lg-3"><div class="d-flex gap-3 justify-content-lg-end"><a href="index.html" class="text-reset text-decoration-none"><i data-lucide="house" aria-hidden="true"></i><small>Anasayfa</small></a><a href="kulupler.html" class="text-reset text-decoration-none"><i data-lucide="users" aria-hidden="true"></i><small>Kulüpler</small></a><a href="iletisim.html" class="text-reset text-decoration-none"><i data-lucide="mail" aria-hidden="true"></i><small>İletişim</small></a></div></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./public/bootstrap_5_3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const joinForm = document.getElementById('joinForm');
+    joinForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      joinForm.reset();
+      document.getElementById('joinSuccess').classList.remove('d-none');
+    });
+  </script>
+<script src="./public/lucide_1_61_0/lucide.min.js"></script>
+<script>
+  if (window.lucide) { lucide.createIcons(); }
+</script>
+</body>
+</html>

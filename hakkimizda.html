@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkında | OKÜ Kulüp Sitesi</title>
+  <link rel="stylesheet" href="./public/bootstrap_5_3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/style.css">
+  <link rel="stylesheet" href="./public/lucide_1_61_0/lucide-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ KULÜP SİTESİ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>ANASAYFA</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i data-lucide="users" class="me-1" aria-hidden="true"></i>KULÜPLER</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="kulupler.html"><i data-lucide="library" class="me-1" aria-hidden="true"></i>Tüm Kulüpler</a></li>
+              <li><a class="dropdown-item" href="etkinlikler.html"><i data-lucide="calendar-days" class="me-1" aria-hidden="true"></i>Etkinlik Takvimi</a></li>
+              <li><a class="dropdown-item" href="sss.html"><i data-lucide="circle-help" class="me-1" aria-hidden="true"></i>Sıkça Sorulan Sorular</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="universitimiz.html"><i data-lucide="building-2" class="me-1" aria-hidden="true"></i>ÜNİVERSİTEMİZ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="hakkimizda.html"><i data-lucide="info" class="me-1" aria-hidden="true"></i>HAKKINDA</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="katil.html"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>KATIL</a></li>
+        </ul>
+        <form class="d-flex" role="search" action="kulupler.html" method="get">
+          <input class="form-control me-2" type="search" name="q" placeholder="Konu arayınız" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i data-lucide="search" class="me-1" aria-hidden="true"></i>ARA</button>
+        </form>
+        <button class="btn btn-outline-dark ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#duyurularOffcanvas" aria-controls="duyurularOffcanvas"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pt-5 mt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>Anasayfa</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Hakkında</li>
+      </ol>
+    </nav>
+  </div>
+
+  <main class="container my-5">
+    <h1 class="mb-3"><i data-lucide="info" class="me-1" aria-hidden="true"></i>Hakkımızda</h1>
+    <p class="lead text-body-secondary">OKÜ Kulüp Sitesi, öğrencilerin ilgi alanlarına göre bir araya gelmesini ve birlikte üretmesini kolaylaştırmak için hazırlandı.</p>
+
+    <div class="row g-4 align-items-center mb-5">
+      <div class="col-lg-6">
+        <img src="./public/images/kampuste-ogrenciler.jpg" class="img-fluid border" alt="Kampüste yürüyen öğrenciler">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="h4"><i data-lucide="target" class="me-1" aria-hidden="true"></i>Amacımız</h2>
+        <p>Öğrenci kulüpleri; sosyal sorumluluk, kültür, sanat, spor ve teknoloji alanlarında öğrencilerin gelişimine katkı sağlar. Bu site üzerinden kulüpleri keşfedebilir, etkinlikleri takip edebilir ve başvuru yapabilirsin.</p>
+        <blockquote class="blockquote border-start ps-3">
+          <p class="mb-1">Birlikte üretmek, birlikte öğrenmek.</p>
+          <footer class="blockquote-footer mb-0">OKÜ Öğrenci Kulüpleri</footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <h2 class="h4 mb-3"><i data-lucide="shield-check" class="me-1" aria-hidden="true"></i>Kulüp Politikamız</h2>
+        <div class="accordion" id="aboutAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aboutOne" aria-expanded="true" aria-controls="aboutOne">Misyon</button>
+            </h3>
+            <div id="aboutOne" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">Öğrencilerin akademik hayatın yanında sosyal, kültürel ve mesleki beceriler kazanmasını desteklemek.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aboutTwo" aria-expanded="false" aria-controls="aboutTwo">Vizyon</button>
+            </h3>
+            <div id="aboutTwo" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">Üniversite genelinde en aktif, üretken ve kapsayıcı öğrenci kulüpleri ekosistemini oluşturmak.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aboutThree" aria-expanded="false" aria-controls="aboutThree">Değerler</button>
+            </h3>
+            <div id="aboutThree" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">Katılımcılık, şeffaflık, dayanışma, saygı ve sürdürülebilirlik.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4 mb-3"><i data-lucide="list-checks" class="me-1" aria-hidden="true"></i>Neler Yapıyoruz?</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Haftalık kulüp toplantıları</li>
+          <li class="list-group-item">Atölye ve eğitim programları</li>
+          <li class="list-group-item">Kampüs içi turnuvalar</li>
+          <li class="list-group-item">Sosyal sorumluluk projeleri</li>
+          <li class="list-group-item">Kültür-sanat etkinlikleri</li>
+        </ul>
+        <div class="card mt-4">
+          <div class="card-body">
+            <h3 class="h6 card-title"><i data-lucide="user-round" class="me-1" aria-hidden="true"></i>Kulüp Koordinatörlüğü</h3>
+            <p class="card-text small text-body-secondary">Başvuru ve etkinliklerle ilgili tüm sorular için bize ulaşabilirsin.</p>
+            <a href="iletisim.html" class="btn btn-outline-dark"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişime Geç</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="duyurularOffcanvas" aria-labelledby="duyurularOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5" id="duyurularOffcanvasLabel"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item"><div class="fw-semibold">Kulüp temsilcileri toplantısı</div><small class="text-body-secondary">Her cuma, 17.00</small></li>
+        <li class="list-group-item"><div class="fw-semibold">Yeni dönem başvuruları</div><small class="text-body-secondary">30 Mayıs'a kadar</small></li>
+      </ul>
+      <a href="katil.html" class="btn btn-outline-dark w-100"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Hemen Başvur</a>
+    </div>
+  </div>
+
+  <footer class="border-top mt-5 py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-4"><div class="fw-semibold"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ Kulüp Sitesi</div><small>&copy; 2026 Tüm hakları saklıdır.</small></div>
+        <div class="col-lg-5">
+          <address class="mb-0 small">
+            <div><i data-lucide="map-pin" aria-hidden="true"></i><span>Adres:</span> OKÜ Kampüsü, Öğrenci Yaşam Merkezi</div>
+            <div><i data-lucide="phone" aria-hidden="true"></i><span>Telefon:</span> <a href="tel:+903220000000" class="text-reset text-decoration-none">0322 000 00 00</a></div>
+            <div><i data-lucide="mail" aria-hidden="true"></i><span>E-posta:</span> <a href="mailto:kulup@oku.edu.tr" class="text-reset text-decoration-none">kulup@oku.edu.tr</a></div>
+          </address>
+        </div>
+        <div class="col-lg-3"><div class="d-flex gap-3 justify-content-lg-end"><a href="index.html" class="text-reset text-decoration-none"><i data-lucide="house" aria-hidden="true"></i><small>Anasayfa</small></a><a href="kulupler.html" class="text-reset text-decoration-none"><i data-lucide="users" aria-hidden="true"></i><small>Kulüpler</small></a><a href="iletisim.html" class="text-reset text-decoration-none"><i data-lucide="mail" aria-hidden="true"></i><small>İletişim</small></a></div></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./public/bootstrap_5_3/js/bootstrap.bundle.min.js"></script>
+<script src="./public/lucide_1_61_0/lucide.min.js"></script>
+<script>
+  if (window.lucide) { lucide.createIcons(); }
+</script>
+</body>
+</html>

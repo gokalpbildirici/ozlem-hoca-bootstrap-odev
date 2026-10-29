@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OKÜ Robotik Kulübü hakkında bilgi, etkinlik takvimi ve üyelik detayları.">
+  <title>OKÜ Robotik Kulübü | OKÜ Kulüp Sitesi</title>
+  <link rel="stylesheet" href="./public/bootstrap_5_3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/style.css">
+  <link rel="stylesheet" href="./public/lucide_1_61_0/lucide-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ KULÜP SİTESİ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>ANASAYFA</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i data-lucide="users" class="me-1" aria-hidden="true"></i>KULÜPLER</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="kulupler.html"><i data-lucide="library" class="me-1" aria-hidden="true"></i>Tüm Kulüpler</a></li>
+              <li><a class="dropdown-item" href="etkinlikler.html"><i data-lucide="calendar-days" class="me-1" aria-hidden="true"></i>Etkinlik Takvimi</a></li>
+              <li><a class="dropdown-item" href="sss.html"><i data-lucide="circle-help" class="me-1" aria-hidden="true"></i>Sıkça Sorulan Sorular</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="universitimiz.html"><i data-lucide="building-2" class="me-1" aria-hidden="true"></i>ÜNİVERSİTEMİZ</a></li>
+          <li class="nav-item"><a class="nav-link" href="hakkimizda.html"><i data-lucide="info" class="me-1" aria-hidden="true"></i>HAKKINDA</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="katil.html"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>KATIL</a></li>
+        </ul>
+        <form class="d-flex" role="search" action="kulupler.html" method="get">
+          <input class="form-control me-2" type="search" name="q" placeholder="Konu arayınız" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i data-lucide="search" class="me-1" aria-hidden="true"></i>ARA</button>
+        </form>
+        <button class="btn btn-outline-dark ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#duyurularOffcanvas" aria-controls="duyurularOffcanvas"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pt-5 mt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>Anasayfa</a></li>
+        <li class="breadcrumb-item"><a href="kulupler.html">Kulüpler</a></li>
+        <li class="breadcrumb-item active" aria-current="page">OKÜ Robotik Kulübü</li>
+      </ol>
+    </nav>
+  </div>
+
+  <main class="container my-5">
+    <div class="alert alert-light border" role="alert">
+      <i data-lucide="megaphone" class="me-1" aria-hidden="true"></i><strong>OKÜ Robotik Kulübü</strong> yeni üyelerini bekliyor. Başvuru için <a href="katil.html" class="alert-link">katılım formunu</a> doldurabilirsin.
+    </div>
+
+    <div class="row g-5 align-items-center mb-5">
+      <div class="col-lg-7">
+        <span class="badge border text-dark mb-3">Teknoloji</span>
+        <h1 class="display-6 mb-3"><i data-lucide="bot" class="me-1" aria-hidden="true"></i>OKÜ Robotik Kulübü</h1>
+        <p class="lead text-body-secondary">Tasarla, kodla, harekete geçir.</p>
+        <p>OKÜ Robotik Kulübü; robot tasarımı, elektronik ve otomasyon projeleriyle öğrencilerin mühendislik becerilerini uygulamaya dönüştürdüğü bir atölye.</p>
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          <a href="katil.html" class="btn btn-outline-dark"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+          <a href="#etkinlikler" class="btn btn-outline-dark"><i data-lucide="calendar-days" class="me-1" aria-hidden="true"></i>Etkinlik Takvimi</a>
+          <a href="kulupler.html" class="btn btn-link text-reset text-decoration-none"><i data-lucide="arrow-left" class="me-1" aria-hidden="true"></i>Tüm Kulüpler</a>
+        </div>
+        <p class="small text-body-secondary mt-4 mb-0">Kuruluş 2018 &middot; 75 üye &middot; Robotik Atölyesi</p>
+      </div>
+      <div class="col-lg-5">
+        <div class="card">
+          <img src="./public/images/robotik-kulubu.jpg" class="card-img-top" alt="OKÜ Robotik Kulübü">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="small fw-semibold">Üye kontenjanı</span>
+              <span class="small text-body-secondary">85% dolu</span>
+            </div>
+            <div class="progress mb-3" role="progressbar" aria-label="Üye kontenjanı" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-dark" style="width: 85%"></div>
+            </div>
+            <dl class="row small mb-0">
+              <dt class="col-5 fw-normal text-body-secondary">Toplantı</dt><dd class="col-7 text-end mb-1">Cumartesi 13.00</dd>
+              <dt class="col-5 fw-normal text-body-secondary">Yer</dt><dd class="col-7 text-end mb-1">Robotik Atölyesi</dd>
+              <dt class="col-5 fw-normal text-body-secondary">E-posta</dt><dd class="col-7 text-end mb-0 text-break"><a href="mailto:robotik@oku.edu.tr" class="text-reset">robotik@oku.edu.tr</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-8">
+        <section class="mb-5" aria-labelledby="hakkinda">
+          <h2 id="hakkinda" class="h4 mb-3"><i data-lucide="info" class="me-1" aria-hidden="true"></i>Hakkımızda</h2>
+        <p class="text-body-secondary">2018'de kurulan kulübümüz, robotik atölyesinde haftalık çalışmalar yürütüyor. Üyeler mekanik tasarım, elektronik ve yazılım ekiplerinde birlikte çalışıyor.</p>
+        <p class="text-body-secondary">Başlangıç seviyesinde Arduino ve temel elektronik ile başlıyoruz. İleri seviyede otonom araç, sensör füzyonu ve 3D baskı gibi konulara geçiliyor.</p>
+        <p class="text-body-secondary">Kulüp, TEKNOFEST ve üniversite içi yarışmalara takım çıkarıyor. Proje fikirleri dönem başında belirleniyor ve prototip süreci haftalık raporlarla takip ediliyor.</p>
+        </section>
+
+        <section class="mb-5" aria-labelledby="aktiviteler">
+          <h2 id="aktiviteler" class="h4 mb-3"><i data-lucide="list-checks" class="me-1" aria-hidden="true"></i>Neler Yapıyoruz?</h2>
+          <div class="accordion" id="aktivitelerAccordion" style="--bs-accordion-active-bg: var(--bs-tertiary-bg); --bs-accordion-active-color: var(--bs-emphasis-color); --bs-accordion-btn-focus-box-shadow: none;">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etkinlik-1" aria-expanded="false" aria-controls="etkinlik-1">Robot tasarımı</button>
+              </h3>
+              <div id="etkinlik-1" class="accordion-collapse collapse" data-bs-parent="#aktivitelerAccordion">
+                <div class="accordion-body text-body-secondary">Mekanik parçaları tasarlıyor, montaj ve test süreçlerini yürütüyoruz.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etkinlik-2" aria-expanded="false" aria-controls="etkinlik-2">Arduino atölyesi</button>
+              </h3>
+              <div id="etkinlik-2" class="accordion-collapse collapse" data-bs-parent="#aktivitelerAccordion">
+                <div class="accordion-body text-body-secondary">Sensör, motor ve temel elektronik devreleri uygulamalı çalışıyoruz.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etkinlik-3" aria-expanded="false" aria-controls="etkinlik-3">3D baskı</button>
+              </h3>
+              <div id="etkinlik-3" class="accordion-collapse collapse" data-bs-parent="#aktivitelerAccordion">
+                <div class="accordion-body text-body-secondary">Parça modelleme ve baskı süreçlerini atölyede deniyoruz.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etkinlik-4" aria-expanded="false" aria-controls="etkinlik-4">Otonom araç</button>
+              </h3>
+              <div id="etkinlik-4" class="accordion-collapse collapse" data-bs-parent="#aktivitelerAccordion">
+                <div class="accordion-body text-body-secondary">Çizgi izleme ve engel kaçınma projeleri geliştiriyoruz.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etkinlik-5" aria-expanded="false" aria-controls="etkinlik-5">TEKNOFEST hazırlığı</button>
+              </h3>
+              <div id="etkinlik-5" class="accordion-collapse collapse" data-bs-parent="#aktivitelerAccordion">
+                <div class="accordion-body text-body-secondary">Yarışma kategorilerine uygun takım projeleri hazırlıyoruz.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etkinlik-6" aria-expanded="false" aria-controls="etkinlik-6">Elektronik atölyesi</button>
+              </h3>
+              <div id="etkinlik-6" class="accordion-collapse collapse" data-bs-parent="#aktivitelerAccordion">
+                <div class="accordion-body text-body-secondary">Lehim, ölçüm ve devre hata ayıklama pratiği yapıyoruz.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5" id="etkinlikler" aria-labelledby="etkinlikBaslik">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+            <h2 id="etkinlikBaslik" class="h4 mb-0"><i data-lucide="calendar-days" class="me-1" aria-hidden="true"></i>Etkinlik Takvimi</h2>
+            <a href="etkinlikler.html" class="small text-reset">Tüm etkinlikler<i data-lucide="arrow-right" class="ms-1" aria-hidden="true"></i></a>
+          </div>
+          <div class="table-responsive border">
+            <table class="table table-striped align-middle mb-0">
+              <thead class="table-light">
+                <tr><th scope="col">Tarih</th><th scope="col">Etkinlik</th><th scope="col">Yer</th><th scope="col">Tür</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="text-nowrap">12.11.2026</td><td>Atölye tanıtımı</td><td>Robotik Atölyesi</td><td><span class="badge border text-dark">Tanıtım</span></td></tr>
+                <tr><td class="text-nowrap">26.11.2026</td><td>Arduino ile ilk robot</td><td>Robotik Atölyesi</td><td><span class="badge border text-dark">Atölye</span></td></tr>
+                <tr><td class="text-nowrap">10.12.2026</td><td>Otonom araç çalışması</td><td>Robotik Atölyesi</td><td><span class="badge border text-dark">Proje</span></td></tr>
+                <tr><td class="text-nowrap">17.12.2026</td><td>Prototip sunumu</td><td>İnovasyon Merkezi</td><td><span class="badge border text-dark">Sunum</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="mb-5" aria-labelledby="kadro">
+          <h2 id="kadro" class="h4 mb-3"><i data-lucide="users" class="me-1" aria-hidden="true"></i>Kulüp Ekibi</h2>
+          <div class="row row-cols-1 row-cols-sm-3 g-3">
+            <div class="col">
+              <div class="card h-100 text-center">
+                <div class="card-body">
+                  <div class="rounded-circle border d-inline-flex align-items-center justify-content-center mb-2 bg-body-tertiary" style="width: 48px; height: 48px;">MÖ</div>
+                  <h3 class="h6 mb-1">Mert Özkan</h3>
+                  <p class="small text-body-secondary mb-0">Kulüp başkanı</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 text-center">
+                <div class="card-body">
+                  <div class="rounded-circle border d-inline-flex align-items-center justify-content-center mb-2 bg-body-tertiary" style="width: 48px; height: 48px;">ES</div>
+                  <h3 class="h6 mb-1">Elif Su</h3>
+                  <p class="small text-body-secondary mb-0">Mekanik sorumlusu</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 text-center">
+                <div class="card-body">
+                  <div class="rounded-circle border d-inline-flex align-items-center justify-content-center mb-2 bg-body-tertiary" style="width: 48px; height: 48px;">CY</div>
+                  <h3 class="h6 mb-1">Caner Yılmaz</h3>
+                  <p class="small text-body-secondary mb-0">Elektronik sorumlusu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5" aria-labelledby="notlar">
+          <h2 id="notlar" class="h4 mb-3"><i data-lucide="notebook-text" class="me-1" aria-hidden="true"></i>Kulüp Notları</h2>
+          <div class="d-grid gap-3">
+          <article class="border-top pt-3">
+            <div class="d-flex flex-wrap justify-content-between gap-2">
+              <h3 class="h6 mb-1">Yeni dönem proje başlıkları</h3>
+              <small class="text-body-secondary text-nowrap">14 Ekim 2026</small>
+            </div>
+            <p class="mb-0 text-body-secondary">Otonom araç ve çizgi izleme projeleri için ekipler oluşturuldu.</p>
+          </article>
+          <article class="border-top pt-3">
+            <div class="d-flex flex-wrap justify-content-between gap-2">
+              <h3 class="h6 mb-1">3D yazıcı bakımı</h3>
+              <small class="text-body-secondary text-nowrap">6 Ekim 2026</small>
+            </div>
+            <p class="mb-0 text-body-secondary">Atölyedeki 3D yazıcıların bakımı tamamlandı, baskı kuyruğu açıldı.</p>
+          </article>
+          <article class="border-top pt-3">
+            <div class="d-flex flex-wrap justify-content-between gap-2">
+              <h3 class="h6 mb-1">TEKNOFEST bilgilendirme</h3>
+              <small class="text-body-secondary text-nowrap">28 Eylül 2026</small>
+            </div>
+            <p class="mb-0 text-body-secondary">Yarışma kategorileri ve başvuru takvimi üyelerle paylaşıldı.</p>
+          </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="sss">
+          <h2 id="sss" class="h4 mb-3"><i data-lucide="circle-help" class="me-1" aria-hidden="true"></i>Sıkça Sorulan Sorular</h2>
+          <div class="accordion" id="sssAccordion" style="--bs-accordion-active-bg: var(--bs-tertiary-bg); --bs-accordion-active-color: var(--bs-emphasis-color); --bs-accordion-btn-focus-box-shadow: none;">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sss-1" aria-expanded="false" aria-controls="sss-1">Mühendislik öğrencisi olmam gerekiyor mu?</button>
+              </h3>
+              <div id="sss-1" class="accordion-collapse collapse" data-bs-parent="#sssAccordion">
+                <div class="accordion-body text-body-secondary">Hayır. Farklı bölümlerden üyeler mekanik, elektronik ve yazılım ekiplerinde yer alabiliyor.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sss-2" aria-expanded="false" aria-controls="sss-2">Malzemeleri kim sağlıyor?</button>
+              </h3>
+              <div id="sss-2" class="accordion-collapse collapse" data-bs-parent="#sssAccordion">
+                <div class="accordion-body text-body-secondary">Temel ekipman ve sarf malzemeleri kulüp atölyesinden sağlanıyor.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sss-3" aria-expanded="false" aria-controls="sss-3">Takıma katılmak için seçme var mı?</button>
+              </h3>
+              <div id="sss-3" class="accordion-collapse collapse" data-bs-parent="#sssAccordion">
+                <div class="accordion-body text-body-secondary">Yarışma takımları için teknik değerlendirme yapılıyor; atölyeler herkese açık.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sss-4" aria-expanded="false" aria-controls="sss-4">Deneyimim yok, başlayabilir miyim?</button>
+              </h3>
+              <div id="sss-4" class="accordion-collapse collapse" data-bs-parent="#sssAccordion">
+                <div class="accordion-body text-body-secondary">Evet, Arduino ve temel elektronik eğitimi başlangıç seviyesinden veriliyor.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="h6 card-title"><i data-lucide="clipboard-list" class="me-1" aria-hidden="true"></i>Kulüp Künyesi</h2>
+            <dl class="row small mb-0">
+              <dt class="col-5 fw-normal text-body-secondary">Alan</dt><dd class="col-7 text-end mb-1">Teknoloji</dd>
+              <dt class="col-5 fw-normal text-body-secondary">Kuruluş</dt><dd class="col-7 text-end mb-1">2018</dd>
+              <dt class="col-5 fw-normal text-body-secondary">Üye</dt><dd class="col-7 text-end mb-1">75</dd>
+              <dt class="col-5 fw-normal text-body-secondary">Toplantı</dt><dd class="col-7 text-end mb-1">Cumartesi 13.00</dd>
+              <dt class="col-5 fw-normal text-body-secondary">Yer</dt><dd class="col-7 text-end mb-0">Robotik Atölyesi</dd>
+            </dl>
+            <a href="katil.html" class="btn btn-outline-dark w-100 mt-3"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="h6 card-title"><i data-lucide="calendar-days" class="me-1" aria-hidden="true"></i>Haftalık Program</h2>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span class="fw-semibold">Çarşamba</span>
+              <span class="text-body-secondary text-end"><span class="d-block">17.00 – 20.00</span>Mekanik ve tasarım</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span class="fw-semibold">Cumartesi</span>
+              <span class="text-body-secondary text-end"><span class="d-block">13.00 – 17.00</span>Atölye çalışması</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span class="fw-semibold">Pazar</span>
+              <span class="text-body-secondary text-end"><span class="d-block">14.00 – 17.00</span>Proje geliştirme</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="h6 card-title"><i data-lucide="users" class="me-1" aria-hidden="true"></i>Diğer Kulüpler</h2>
+            <p class="small text-body-secondary">İlginizi çekebilecek diğer topluluklar.</p>
+          </div>
+          <div class="list-group list-group-flush">
+            <a href="girisimcilik-kulubu.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center gap-2">
+              <span>OKÜ Girişimcilik Kulübü</span>
+              <span class="badge border text-dark">Teknoloji</span>
+            </a>
+            <a href="yazilim-kulubu.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center gap-2">
+              <span>OKÜ Yazılım Kulübü</span>
+              <span class="badge border text-dark">Teknoloji</span>
+            </a>
+            <a href="astronomi-kulubu.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center gap-2">
+              <span>OKÜ Astronomi Kulübü</span>
+              <span class="badge border text-dark">Bilim</span>
+            </a>
+            <a href="kulupler.html" class="list-group-item list-group-item-action text-center"><i data-lucide="users" class="me-1" aria-hidden="true"></i>Tüm Kulüpler</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h2 class="h6 card-title"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</h2>
+            <p class="small text-body-secondary mb-2">Sorularınız için kulüp ofisine uğrayabilir veya e-posta gönderebilirsiniz.</p>
+            <div class="small mb-1"><i data-lucide="mail" aria-hidden="true"></i><span class="text-body-secondary">E-posta:</span> <a href="mailto:robotik@oku.edu.tr" class="text-reset text-break">robotik@oku.edu.tr</a></div>
+            <div class="small mb-0"><span class="text-body-secondary">Yer:</span> Robotik Atölyesi</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="duyurularOffcanvas" aria-labelledby="duyurularOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5" id="duyurularOffcanvasLabel"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item">
+          <div class="fw-semibold">OKÜ Robotik Kulübü</div>
+          <small class="text-body-secondary">Arduino ile ilk robot atölyesi 26 Kasım'da. Kontenjan sınırlı.</small>
+        </li>
+        <li class="list-group-item">
+          <div class="fw-semibold">Kulüp tanıtım günleri</div>
+          <small class="text-body-secondary">Her çarşamba Öğrenci Yaşam Merkezi'nde</small>
+        </li>
+      </ul>
+      <a href="katil.html" class="btn btn-outline-dark w-100"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Hemen Başvur</a>
+    </div>
+  </div>
+
+  <footer class="border-top mt-5 py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-4">
+          <div class="fw-semibold"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ Kulüp Sitesi</div>
+          <small class="text-dark">&copy; 2026 Tüm hakları saklıdır.</small>
+        </div>
+        <div class="col-lg-5">
+          <address class="mb-0 small text-dark">
+            <div><i data-lucide="map-pin" aria-hidden="true"></i><span class="text-dark">Adres:</span> OKÜ Kampüsü, Öğrenci Yaşam Merkezi</div>
+            <div><i data-lucide="phone" aria-hidden="true"></i><span class="text-dark">Telefon:</span> <a href="tel:+903220000000" class="text-reset text-decoration-none text-dark">0322 000 00 00</a></div>
+            <div><i data-lucide="mail" aria-hidden="true"></i><span class="text-dark">E-posta:</span> <a href="mailto:kulup@oku.edu.tr" class="text-reset text-decoration-none text-dark">kulup@oku.edu.tr</a></div>
+          </address>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex gap-3 justify-content-lg-end">
+            <a href="index.html" class="text-reset text-decoration-none"><i data-lucide="house" aria-hidden="true"></i><small>Anasayfa</small></a>
+            <a href="kulupler.html" class="text-reset text-decoration-none"><i data-lucide="users" aria-hidden="true"></i><small>Kulüpler</small></a>
+            <a href="iletisim.html" class="text-reset text-decoration-none"><i data-lucide="mail" aria-hidden="true"></i><small>İletişim</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./public/bootstrap_5_3/js/bootstrap.bundle.min.js"></script>
+<script src="./public/lucide_1_61_0/lucide.min.js"></script>
+<script>
+  if (window.lucide) { lucide.createIcons(); }
+</script>
+</body>
+</html>

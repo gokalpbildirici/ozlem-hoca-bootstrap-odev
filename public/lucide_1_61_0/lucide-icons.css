@@ -1,0 +1,24 @@
+.lucide {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  stroke-width: 2;
+}
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .btn {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.navbar .dropdown-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.navbar .lucide {
+  flex-shrink: 0;
+}
+.navbar .nav-item {
+  flex-shrink: 0;
+}

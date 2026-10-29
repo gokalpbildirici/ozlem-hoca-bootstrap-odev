@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sıkça Sorulan Sorular | OKÜ Kulüp Sitesi</title>
+  <link rel="stylesheet" href="./public/bootstrap_5_3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/style.css">
+  <link rel="stylesheet" href="./public/lucide_1_61_0/lucide-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ KULÜP SİTESİ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>ANASAYFA</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i data-lucide="users" class="me-1" aria-hidden="true"></i>KULÜPLER</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="kulupler.html"><i data-lucide="library" class="me-1" aria-hidden="true"></i>Tüm Kulüpler</a></li>
+              <li><a class="dropdown-item" href="etkinlikler.html"><i data-lucide="calendar-days" class="me-1" aria-hidden="true"></i>Etkinlik Takvimi</a></li>
+              <li><a class="dropdown-item active" href="sss.html">Sıkça Sorulan Sorular</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="universitimiz.html"><i data-lucide="building-2" class="me-1" aria-hidden="true"></i>ÜNİVERSİTEMİZ</a></li>
+          <li class="nav-item"><a class="nav-link" href="hakkimizda.html"><i data-lucide="info" class="me-1" aria-hidden="true"></i>HAKKINDA</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="katil.html"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>KATIL</a></li>
+        </ul>
+        <form class="d-flex" role="search" action="kulupler.html" method="get">
+          <input class="form-control me-2" type="search" name="q" placeholder="Konu arayınız" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i data-lucide="search" class="me-1" aria-hidden="true"></i>ARA</button>
+        </form>
+        <button class="btn btn-outline-dark ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#duyurularOffcanvas" aria-controls="duyurularOffcanvas"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pt-5 mt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>Anasayfa</a></li>
+        <li class="breadcrumb-item"><a href="kulupler.html">Kulüpler</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Sıkça Sorulan Sorular</li>
+      </ol>
+    </nav>
+  </div>
+
+  <main class="container my-5">
+    <h1 class="mb-3"><i data-lucide="circle-help" class="me-1" aria-hidden="true"></i>Sıkça Sorulan Sorular</h1>
+    <p class="lead text-body-secondary">Kulüplere üyelik, etkinlikler ve başvuru süreciyle ilgili en çok sorulan sorular.</p>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Kulüplere nasıl üye olabilirim?</button></h2>
+            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body"><a href="katil.html">Katıl</a> sayfasındaki formu doldurman yeterli. Kulüp yönetimi başvurunu değerlendirdikten sonra seninle iletişime geçer.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Üyelik ücretli mi?</button></h2>
+            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Hayır. Öğrenci kulüplerine üyelik ücretsizdir. Bazı özel geziler veya malzeme gerektiren atölyeler için ayrı bilgilendirme yapılabilir.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">Birden fazla kulübe katılabilir miyim?</button></h2>
+            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Evet. İlgilendiğin kadar kulübe başvurabilirsin. Ancak toplantı ve etkinlik programlarının çakışmamasına dikkat etmen önerilir.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">Başvurum ne zaman sonuçlanır?</button></h2>
+            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Başvurular genellikle 3-5 iş günü içinde değerlendirilir. Yoğun dönemlerde bu süre bir haftaya çıkabilir.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">Etkinliklere katılmak için üye olmak gerekir mi?</button></h2>
+            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Açık etkinliklere üye olmadan da katılabilirsin. Atölye ve kontenjanlı etkinliklerde öncelik kulüp üyelerine verilir.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix">Yeni bir kulüp kurmak istiyorum, ne yapmalıyım?</button></h2>
+            <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">En az 10 öğrenciyle birlikte kulüp kuruluş dilekçesi hazırlayıp Öğrenci Kulüpleri Koordinatörlüğüne başvurabilirsin.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSeven" aria-expanded="false" aria-controls="faqSeven">Toplantılar ne sıklıkla yapılıyor?</button></h2>
+            <div id="faqSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Kulüplerin çoğu haftada bir veya iki haftada bir toplanır. Güncel program kulüp duyuru kanallarında paylaşılır.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqEight" aria-expanded="false" aria-controls="faqEight">Devamsızlık sınırı var mı?</button></h2>
+            <div id="faqEight" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Kulüpten kulübe değişmekle birlikte, üst üste üç toplantıya katılmayan üyeler için yönetim bilgilendirme yapar.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqNine" aria-expanded="false" aria-controls="faqNine">Kulüp değiştirebilir miyim?</button></h2>
+            <div id="faqNine" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Evet. Yeni kulübe başvuru yapabilir, mevcut kulüpten ayrılmak istediğini yönetime bildirebilirsin.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTen" aria-expanded="false" aria-controls="faqTen">Katılım sertifikası veriliyor mu?</button></h2>
+            <div id="faqTen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Belirli eğitim ve proje programlarında, katılım koşullarını sağlayan öğrencilere sertifika verilir.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqEleven" aria-expanded="false" aria-controls="faqEleven">Etkinlik duyurularını nereden takip edebilirim?</button></h2>
+            <div id="faqEleven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><a href="etkinlikler.html">Etkinlik takvimi</a> sayfasını, navbar üzerindeki duyurular panelini ve kulüplerin sosyal medya hesaplarını takip edebilirsin.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwelve" aria-expanded="false" aria-controls="faqTwelve">Yurt dışı etkinlikler var mı?</button></h2>
+            <div id="faqTwelve" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Bazı kulüpler uluslararası proje, konferans ve değişim programları düzenler. Duyurular dönem başlarında paylaşılır.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThirteen" aria-expanded="false" aria-controls="faqThirteen">Kulüp yönetiminde yer alabilir miyim?</button></h2>
+            <div id="faqThirteen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Evet. Dönem başlarında yapılan genel kurul seçimlerine aday olabilir veya komisyonlarda görev alabilirsin.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFourteen" aria-expanded="false" aria-controls="faqFourteen">Mezun öğrenciler üye olabilir mi?</button></h2>
+            <div id="faqFourteen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Mezunlar aktif üye olamaz; ancak bazı kulüpler mezun gönüllü ağı üzerinden etkinliklere destek verebilir.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFifteen" aria-expanded="false" aria-controls="faqFifteen">Özel gereksinimim var, destek alabilir miyim?</button></h2>
+            <div id="faqFifteen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Evet. Etkinlik ve ulaşım konusunda ihtiyaçlarını <a href="iletisim.html">iletişim</a> üzerinden bize bildirebilirsin; gerekli düzenlemeler yapılır.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="h5 card-title"><i data-lucide="circle-help" class="me-1" aria-hidden="true"></i>Cevabını bulamadın mı?</h2>
+            <p class="card-text text-body-secondary">Sorunu bize gönder, kulüp koordinatörlüğü en kısa sürede dönüş yapsın.</p>
+            <a href="iletisim.html" class="btn btn-outline-dark w-100"><i data-lucide="circle-help" class="me-1" aria-hidden="true"></i>Soru Sor</a>
+          </div>
+        </div>
+        <div class="border p-4">
+          <h2 class="h6"><i data-lucide="link" class="me-1" aria-hidden="true"></i>Hızlı Bağlantılar</h2>
+          <div class="list-group list-group-flush">
+            <a href="kulupler.html" class="list-group-item list-group-item-action px-0">Tüm Kulüpler</a>
+            <a href="etkinlikler.html" class="list-group-item list-group-item-action px-0">Etkinlik Takvimi</a>
+            <a href="katil.html" class="list-group-item list-group-item-action px-0">Başvuru Formu</a>
+            <a href="universitimiz.html" class="list-group-item list-group-item-action px-0">Üniversitemiz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="duyurularOffcanvas" aria-labelledby="duyurularOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5" id="duyurularOffcanvasLabel"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item"><div class="fw-semibold">Başvuru formu açıldı</div><small class="text-body-secondary">30 Mayıs'a kadar</small></li>
+        <li class="list-group-item"><div class="fw-semibold">Kulüp tanıtım günleri</div><small class="text-body-secondary">Her salı, 12.00</small></li>
+      </ul>
+      <a href="katil.html" class="btn btn-outline-dark w-100"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Hemen Başvur</a>
+    </div>
+  </div>
+
+  <footer class="border-top mt-5 py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-4"><div class="fw-semibold"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ Kulüp Sitesi</div><small class="text-dark">&copy; 2026 Tüm hakları saklıdır.</small></div>
+        <div class="col-lg-5">
+          <address class="mb-0 small text-dark">
+            <div><i data-lucide="map-pin" aria-hidden="true"></i><span class="text-dark">Adres:</span> OKÜ Kampüsü, Öğrenci Yaşam Merkezi</div>
+            <div><i data-lucide="phone" aria-hidden="true"></i><span class="text-dark">Telefon:</span> <a href="tel:+903220000000" class="text-reset text-decoration-none text-dark">0322 000 00 00</a></div>
+            <div><i data-lucide="mail" aria-hidden="true"></i><span class="text-dark">E-posta:</span> <a href="mailto:kulup@oku.edu.tr" class="text-reset text-decoration-none text-dark">kulup@oku.edu.tr</a></div>
+          </address>
+        </div>
+        <div class="col-lg-3"><div class="d-flex gap-3 justify-content-lg-end"><a href="index.html" class="text-reset text-decoration-none"><i data-lucide="house" aria-hidden="true"></i><small>Anasayfa</small></a><a href="kulupler.html" class="text-reset text-decoration-none"><i data-lucide="users" aria-hidden="true"></i><small>Kulüpler</small></a><a href="iletisim.html" class="text-reset text-decoration-none"><i data-lucide="mail" aria-hidden="true"></i><small>İletişim</small></a></div></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./public/bootstrap_5_3/js/bootstrap.bundle.min.js"></script>
+<script src="./public/lucide_1_61_0/lucide.min.js"></script>
+<script>
+  if (window.lucide) { lucide.createIcons(); }
+</script>
+</body>
+</html>

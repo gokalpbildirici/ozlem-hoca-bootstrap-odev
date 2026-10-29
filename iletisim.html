@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim | OKÜ Kulüp Sitesi</title>
+  <link rel="stylesheet" href="./public/bootstrap_5_3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/style.css">
+  <link rel="stylesheet" href="./public/lucide_1_61_0/lucide-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ KULÜP SİTESİ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>ANASAYFA</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i data-lucide="users" class="me-1" aria-hidden="true"></i>KULÜPLER</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="kulupler.html"><i data-lucide="library" class="me-1" aria-hidden="true"></i>Tüm Kulüpler</a></li>
+              <li><a class="dropdown-item" href="etkinlikler.html"><i data-lucide="calendar-days" class="me-1" aria-hidden="true"></i>Etkinlik Takvimi</a></li>
+              <li><a class="dropdown-item" href="sss.html"><i data-lucide="circle-help" class="me-1" aria-hidden="true"></i>Sıkça Sorulan Sorular</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="universitimiz.html"><i data-lucide="building-2" class="me-1" aria-hidden="true"></i>ÜNİVERSİTEMİZ</a></li>
+          <li class="nav-item"><a class="nav-link" href="hakkimizda.html"><i data-lucide="info" class="me-1" aria-hidden="true"></i>HAKKINDA</a></li>
+          <li class="nav-item"><a class="nav-link active" href="iletisim.html">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="katil.html"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>KATIL</a></li>
+        </ul>
+        <form class="d-flex" role="search" action="kulupler.html" method="get">
+          <input class="form-control me-2" type="search" name="q" placeholder="Konu arayınız" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i data-lucide="search" class="me-1" aria-hidden="true"></i>ARA</button>
+        </form>
+        <button class="btn btn-outline-dark ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#duyurularOffcanvas" aria-controls="duyurularOffcanvas"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pt-5 mt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>Anasayfa</a></li>
+        <li class="breadcrumb-item active" aria-current="page">İletişim</li>
+      </ol>
+    </nav>
+    <div class="alert alert-light border" role="alert">
+      Form üzerinden gönderilen mesajlar 1-2 iş günü içinde yanıtlanır.
+    </div>
+  </div>
+
+  <main class="container my-5">
+    <h1 class="mb-3"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</h1>
+    <p class="lead text-body-secondary">Kulüp önerileri, etkinlik fikirleri veya sorularınız için bize ulaşabilirsin.</p>
+
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <div class="border p-4 h-100">
+          <h2 class="h4 mb-3"><i data-lucide="map-pin" class="me-1" aria-hidden="true"></i>İletişim Bilgileri</h2>
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item px-0"><i data-lucide="map-pin" aria-hidden="true"></i><strong>Adres:</strong> OKÜ Kampüsü, Öğrenci Yaşam Merkezi</li>
+            <li class="list-group-item px-0"><i data-lucide="phone" aria-hidden="true"></i><strong>Telefon:</strong> <a href="tel:+903220000000" class="text-reset text-decoration-none">0322 000 00 00</a></li>
+            <li class="list-group-item px-0"><i data-lucide="mail" aria-hidden="true"></i><strong>E-posta:</strong> <a href="mailto:kulup@oku.edu.tr" class="text-reset text-decoration-none">kulup@oku.edu.tr</a></li>
+            <li class="list-group-item px-0"><i data-lucide="clock" aria-hidden="true"></i><strong>Çalışma Saatleri:</strong> Hafta içi 09.00-17.00</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-trigger="hover focus click" title="Instagram hesabımızı ziyaret et">Instagram</button>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-trigger="hover focus click" title="X hesabımızı ziyaret et">X</button>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-trigger="hover focus click" title="LinkedIn sayfamızı ziyaret et">LinkedIn</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <form id="contactForm" class="border p-4 h-100">
+          <h2 class="h4 mb-3"><i data-lucide="message-square" class="me-1" aria-hidden="true"></i>Mesaj Gönder</h2>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="contactName" placeholder="Ad Soyad" required>
+                <label for="contactName">Ad Soyad</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="contactEmail" placeholder="E-posta" required>
+                <label for="contactEmail">E-posta</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-floating">
+                <select class="form-select" id="contactSubject">
+                  <option selected>Kulüp başvurusu</option>
+                  <option>Etkinlik önerisi</option>
+                  <option>Genel bilgi</option>
+                </select>
+                <label for="contactSubject">Konu</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Mesajınız" id="contactMessage" style="height: 140px" required></textarea>
+                <label for="contactMessage">Mesajınız</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-outline-dark"><i data-lucide="send" class="me-1" aria-hidden="true"></i>Mesajı Gönder</button>
+            </div>
+            <div class="col-12">
+              <div id="contactSuccess" class="alert alert-light border mb-0 d-none" role="alert">Mesajın alındı. En kısa sürede dönüş yapacağız.</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="duyurularOffcanvas" aria-labelledby="duyurularOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5" id="duyurularOffcanvasLabel"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item"><div class="fw-semibold">Kulüp başvuruları</div><small class="text-body-secondary">30 Mayıs'a kadar açık</small></li>
+        <li class="list-group-item"><div class="fw-semibold">Tanıtım günleri</div><small class="text-body-secondary">Her salı, 12.00-14.00</small></li>
+      </ul>
+      <a href="katil.html" class="btn btn-outline-dark w-100"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Hemen Başvur</a>
+    </div>
+  </div>
+
+  <footer class="border-top mt-5 py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-4"><div class="fw-semibold"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ Kulüp Sitesi</div><small class="text-dark">&copy; 2026 Tüm hakları saklıdır.</small></div>
+        <div class="col-lg-5">
+          <address class="mb-0 small text-dark">
+            <div><i data-lucide="map-pin" aria-hidden="true"></i><span class="text-dark">Adres:</span> OKÜ Kampüsü, Öğrenci Yaşam Merkezi</div>
+            <div><i data-lucide="phone" aria-hidden="true"></i><span class="text-dark">Telefon:</span> <a href="tel:+903220000000" class="text-reset text-decoration-none text-dark">0322 000 00 00</a></div>
+            <div><i data-lucide="mail" aria-hidden="true"></i><span class="text-dark">E-posta:</span> <a href="mailto:kulup@oku.edu.tr" class="text-reset text-decoration-none text-dark">kulup@oku.edu.tr</a></div>
+          </address>
+        </div>
+        <div class="col-lg-3"><div class="d-flex gap-3 justify-content-lg-end"><a href="index.html" class="text-reset text-decoration-none"><i data-lucide="house" aria-hidden="true"></i><small>Anasayfa</small></a><a href="kulupler.html" class="text-reset text-decoration-none"><i data-lucide="users" aria-hidden="true"></i><small>Kulüpler</small></a><a href="iletisim.html" class="text-reset text-decoration-none"><i data-lucide="mail" aria-hidden="true"></i><small>İletişim</small></a></div></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./public/bootstrap_5_3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    [...tooltipTriggerList].forEach((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      contactForm.reset();
+      document.getElementById('contactSuccess').classList.remove('d-none');
+    });
+  </script>
+<script src="./public/lucide_1_61_0/lucide.min.js"></script>
+<script>
+  if (window.lucide) { lucide.createIcons(); }
+</script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kulüpler | OKÜ Kulüp Sitesi</title>
+  <link rel="stylesheet" href="./public/bootstrap_5_3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/style.css">
+  <link rel="stylesheet" href="./public/lucide_1_61_0/lucide-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ KULÜP SİTESİ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>ANASAYFA</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i data-lucide="users" class="me-1" aria-hidden="true"></i>KULÜPLER</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="kulupler.html"><i data-lucide="library" class="me-1" aria-hidden="true"></i>Tüm Kulüpler</a></li>
+              <li><a class="dropdown-item" href="etkinlikler.html"><i data-lucide="calendar-days" class="me-1" aria-hidden="true"></i>Etkinlik Takvimi</a></li>
+              <li><a class="dropdown-item" href="sss.html"><i data-lucide="circle-help" class="me-1" aria-hidden="true"></i>Sıkça Sorulan Sorular</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="universitimiz.html"><i data-lucide="building-2" class="me-1" aria-hidden="true"></i>ÜNİVERSİTEMİZ</a></li>
+          <li class="nav-item"><a class="nav-link" href="hakkimizda.html"><i data-lucide="info" class="me-1" aria-hidden="true"></i>HAKKINDA</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html"><i data-lucide="mail" class="me-1" aria-hidden="true"></i>İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="katil.html"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>KATIL</a></li>
+        </ul>
+        <form class="d-flex" role="search" action="kulupler.html" method="get">
+          <input class="form-control me-2" type="search" name="q" placeholder="Konu arayınız" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i data-lucide="search" class="me-1" aria-hidden="true"></i>ARA</button>
+        </form>
+        <button class="btn btn-outline-dark ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#duyurularOffcanvas" aria-controls="duyurularOffcanvas"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pt-5 mt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><i data-lucide="house" class="me-1" aria-hidden="true"></i>Anasayfa</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Kulüpler</li>
+      </ol>
+    </nav>
+    <div class="alert alert-light border" role="alert">
+      Toplam 15 aktif öğrenci kulübü bulunuyor. Başvuru için <a href="katil.html" class="alert-link">katılım formunu</a> doldurabilirsin.
+    </div>
+  </div>
+
+  <main class="container my-5">
+    <h1 class="mb-2"><i data-lucide="users" class="me-1" aria-hidden="true"></i>Öğrenci Kulüpleri</h1>
+    <p class="lead text-body-secondary mb-4">Spor, sanat, teknoloji ve sosyal sorumluluk alanlarındaki kulüplerimizi inceleyebilirsin.</p>
+
+    <div class="row g-4">
+      <aside class="col-lg-3">
+        <div class="list-group mb-4">
+          <a href="kulupler.html" class="list-group-item list-group-item-action active" aria-current="true">Tüm Kulüpler</a>
+          <a href="#spor" class="list-group-item list-group-item-action">Spor ve Yaşam</a>
+          <a href="#sanat" class="list-group-item list-group-item-action">Sanat ve Kültür</a>
+          <a href="#teknoloji" class="list-group-item list-group-item-action">Teknoloji ve Bilim</a>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="h6 card-title"><i data-lucide="gauge" class="me-1" aria-hidden="true"></i>Üye Kontenjanı</h2>
+            <p class="card-text small text-body-secondary">Yeni dönem kontenjanının %72'si doldu.</p>
+            <div class="progress mb-3" role="progressbar" aria-label="Üye kontenjanı" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-dark" style="width: 72%">72%</div>
+            </div>
+            <a href="katil.html" class="btn btn-outline-dark w-100"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="col-lg-9">
+        <div id="spor" class="mb-4">
+          <h2 class="h4 mb-3"><i data-lucide="trophy" class="me-1" aria-hidden="true"></i>Spor ve Yaşam</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/basketbol-kulubu.jpg" class="card-img-top" alt="Basketbol takımı">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Spor</span>
+                  <h3 class="h5 card-title">OKÜ Basketbol Kulübü</h3>
+                  <p class="card-text">Kampüs turnuvalarında takım ruhunu güçlendiriyor, haftalık antrenmanlarla formda kalıyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/dans-kulubu.jpg" class="card-img-top" alt="Dans eden öğrenciler">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Spor</span>
+                  <h3 class="h5 card-title">OKÜ Dans Kulübü</h3>
+                  <p class="card-text">Modern, halk ve latin danslarıyla sahne alıyor, koreografiler hazırlıyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/doga-kulubu.jpg" class="card-img-top" alt="Kampüste açık havada vakit geçiren öğrenciler">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Yaşam</span>
+                  <h3 class="h5 card-title">OKÜ Doğa ve Çevre Kulübü</h3>
+                  <p class="card-text">Doğa yürüyüşleri, kamp etkinlikleri ve çevre projeleriyle sürdürülebilir bir gelecek için çalışıyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/gonulluluk-kulubu.jpg" class="card-img-top" alt="Bağışları düzenleyen gönüllüler">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Yaşam</span>
+                  <h3 class="h5 card-title">OKÜ Gönüllülük Kulübü</h3>
+                  <p class="card-text">Sosyal sorumluluk projelerinde dayanışmayı büyütüyor, topluma katkı sağlıyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/gastronomi-kulubu.jpg" class="card-img-top" alt="Mutfakta yemek hazırlayan öğrenciler">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Yaşam</span>
+                  <h3 class="h5 card-title">OKÜ Gastronomi Kulübü</h3>
+                  <p class="card-text">Yerel ve dünya mutfaklarını deneyerek lezzet atölyeleri ve tadım etkinlikleri düzenliyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="sanat" class="mb-4">
+          <h2 class="h4 mb-3"><i data-lucide="palette" class="me-1" aria-hidden="true"></i>Sanat ve Kültür</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/sanat-kulubu.jpg" class="card-img-top" alt="Sanat atölyesi">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Sanat</span>
+                  <h3 class="h5 card-title">OKÜ Sanat Kulübü</h3>
+                  <p class="card-text">Resim, heykel ve seramik atölyeleriyle hayal gücünü somut eserlere dönüştürüyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/muzik-kulubu.jpg" class="card-img-top" alt="Üniversite korosu">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Sanat</span>
+                  <h3 class="h5 card-title">OKÜ Müzik Kulübü</h3>
+                  <p class="card-text">Koro ve enstrüman çalışmalarıyla sahne deneyimi kazanıyor, dönem sonu konserleri düzenliyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/fotografcilik-kulubu.jpg" class="card-img-top" alt="Fotoğraf çeken öğrenci">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Sanat</span>
+                  <h3 class="h5 card-title">OKÜ Fotoğrafçılık Kulübü</h3>
+                  <p class="card-text">Kampüs ve şehir gezilerinde fotoğraf tekniklerini öğreniyor, sergiler düzenliyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/tiyatro-kulubu.jpg" class="card-img-top" alt="Sahnedeki tiyatro oyuncuları">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Sanat</span>
+                  <h3 class="h5 card-title">OKÜ Tiyatro Kulübü</h3>
+                  <p class="card-text">Oyunculuk, doğaçlama ve sahne çalışmalarıyla her dönem yeni bir oyun hazırlıyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/edebiyat-kulubu.jpg" class="card-img-top" alt="Kütüphanede kitap okuyan öğrenciler">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Kültür</span>
+                  <h3 class="h5 card-title">OKÜ Edebiyat Kulübü</h3>
+                  <p class="card-text">Kitap söyleşileri, şiir dinletileri ve yazarlık atölyeleriyle kelimelerin dünyasında buluşuyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="teknoloji" class="mb-4">
+          <h2 class="h4 mb-3"><i data-lucide="cpu" class="me-1" aria-hidden="true"></i>Teknoloji ve Bilim</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/yazilim-kulubu.jpg" class="card-img-top" alt="Birlikte kod yazan öğrenciler">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Teknoloji</span>
+                  <h3 class="h5 card-title">OKÜ Yazılım Kulübü</h3>
+                  <p class="card-text">Kodlama atölyeleri, hackathonlar ve yapay zekâ projeleriyle teknolojiyi birlikte üretiyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/satranc-kulubu.jpg" class="card-img-top" alt="Satranç oynayan öğrenciler">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Bilim</span>
+                  <h3 class="h5 card-title">OKÜ Satranç Kulübü</h3>
+                  <p class="card-text">Taktik ve strateji odaklı turnuvalarla düşünme becerilerimizi geliştiriyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/astronomi-kulubu.jpg" class="card-img-top" alt="Yıldızlı gökyüzünde teleskop">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Bilim</span>
+                  <h3 class="h5 card-title">OKÜ Astronomi Kulübü</h3>
+                  <p class="card-text">Gözlem geceleri ve seminerlerle evrenin sırlarını birlikte keşfediyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/robotik-kulubu.jpg" class="card-img-top" alt="Robotik proje üzerinde çalışan öğrenciler">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Teknoloji</span>
+                  <h3 class="h5 card-title">OKÜ Robotik Kulübü</h3>
+                  <p class="card-text">Robot tasarımı, elektronik ve otomasyon projeleriyle geleceğin teknolojilerini deniyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./public/images/girisimcilik-kulubu.jpg" class="card-img-top" alt="Fikir geliştiren girişimci adayları">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge border text-dark align-self-start mb-2">Teknoloji</span>
+                  <h3 class="h5 card-title">OKÜ Girişimcilik Kulübü</h3>
+                  <p class="card-text">İş fikirlerini geliştiriyor, mentorluk ve sunumlarla girişimcilik yolculuğuna hazırlanıyoruz.</p>
+                  <a href="katil.html" class="btn btn-outline-dark mt-auto"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Kulübe Katıl</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav aria-label="Kulüp sayfaları">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Önceki</a></li>
+            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Sonraki</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="duyurularOffcanvas" aria-labelledby="duyurularOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5" id="duyurularOffcanvasLabel"><i data-lucide="bell" class="me-1" aria-hidden="true"></i>Duyurular</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item d-flex justify-content-between align-items-start gap-2">
+          <div class="me-auto"><div class="fw-semibold">Bahar Şenliği başvuruları</div><small class="text-body-secondary">Son tarih: 30 Mayıs</small></div>
+          <span class="badge border text-dark">Yeni</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start gap-2">
+          <div class="me-auto"><div class="fw-semibold">Robotik atölyesi kontenjanı</div><small class="text-body-secondary">18 Mayıs'ta başlıyor</small></div>
+          <span class="badge border text-dark">Az Kaldı</span>
+        </li>
+      </ul>
+      <a href="katil.html" class="btn btn-outline-dark w-100"><i data-lucide="user-plus" class="me-1" aria-hidden="true"></i>Hemen Başvur</a>
+    </div>
+  </div>
+
+  <footer class="border-top mt-5 py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-4">
+          <div class="fw-semibold"><i data-lucide="graduation-cap" class="me-1" aria-hidden="true"></i>OKÜ Kulüp Sitesi</div>
+          <small class="text-dark">&copy; 2026 Tüm hakları saklıdır.</small>
+        </div>
+        <div class="col-lg-5">
+          <address class="mb-0 small text-dark">
+            <div><i data-lucide="map-pin" aria-hidden="true"></i><span class="text-dark">Adres:</span> OKÜ Kampüsü, Öğrenci Yaşam Merkezi</div>
+            <div><i data-lucide="phone" aria-hidden="true"></i><span class="text-dark">Telefon:</span> <a href="tel:+903220000000" class="text-reset text-decoration-none text-dark">0322 000 00 00</a></div>
+            <div><i data-lucide="mail" aria-hidden="true"></i><span class="text-dark">E-posta:</span> <a href="mailto:kulup@oku.edu.tr" class="text-reset text-decoration-none text-dark">kulup@oku.edu.tr</a></div>
+          </address>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex gap-3 justify-content-lg-end">
+            <a href="index.html" class="text-reset text-decoration-none"><i data-lucide="house" aria-hidden="true"></i><small>Anasayfa</small></a>
+            <a href="kulupler.html" class="text-reset text-decoration-none"><i data-lucide="users" aria-hidden="true"></i><small>Kulüpler</small></a>
+            <a href="iletisim.html" class="text-reset text-decoration-none"><i data-lucide="mail" aria-hidden="true"></i><small>İletişim</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./public/bootstrap_5_3/js/bootstrap.bundle.min.js"></script>
+<script src="./public/lucide_1_61_0/lucide.min.js"></script>
+<script>
+  if (window.lucide) { lucide.createIcons(); }
+</script>
+</body>
+</html>
